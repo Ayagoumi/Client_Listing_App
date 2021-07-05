@@ -1,0 +1,39 @@
+.cardsContainer {
+  @media only screen and (max-width: 375px) {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+.popup {
+  @media only screen and (max-width: 768px) {
+    min-width: 18rem;
+  }
+}
+
+.oneCard {
+  @media only screen and (max-width: 375px) {
+    grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+  }
+}
+
+.Client_Div {
+  //   width: 80%;
+  height: 80%;
+  background-color: blue;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+  --tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.hide-scroll-bar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.hide-scroll-bar::-webkit-scrollbar {
+  display: none;
+}
